@@ -1,0 +1,208 @@
+
+
+
+body {
+	background-color: #eeeeee;
+	color: gray;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-family: 'Pacifico', cursive;
+}
+
+header {
+	min-height: 200px;
+	text-align: center;
+}
+
+header h1{
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	text-shadow: 0 5px 0 white;
+}
+header p {
+	margin: 10px;
+}
+
+header .fa {
+	border: 1px solid;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: white;
+	transform-origin: 50% 50%;
+	transition-duration: 0.5s;
+	
+}
+
+header .fa-shopping-cart {
+	transform: rotate(-40deg);
+}
+
+header .fa:hover {
+	transform: scale(1.25) translate(300px,0);
+}
+
+header .reset {
+	color: gray;
+	border-color: gray;
+	text-decoration: none;
+	font-size: 16px;
+	transition: 1s;
+}
+
+
+header .reset:hover {
+	transform: rotate(360deg);
+	background-color: darkblue;
+	color: white;
+}
+
+.main{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.add-list,
+.shopping-list {
+	display: inline-block;
+	min-width: 30%;
+	vertical-align: top;
+	border-radius: 5px;
+	color: black;
+}
+
+.add {
+	height: 45px;
+	padding-left: 10px;
+	margin-right: 5px;
+    border: 1px solid lightgray;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    border-radius: 5px;
+}
+
+.shopping-list {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	position: relative;
+	box-shadow: 0 0 5px;
+	min-height: 200px;
+	background-image: url('../img/green_cup.png');
+}
+
+.shopping-list p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.shopping-list .fa {
+	vertical-align: middle;
+	transition: 0.5s;
+}
+
+.shopping-list .fa:hover {
+	transform: scale(1.2);
+}
+
+.item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url('../img/green_cup.png');
+	border: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	position: relative;
+	font-family: 'Pacifico', cursive;
+	width: 60%;
+	transition: color 0.5s, textdecoration 1s;
+}
+
+
+
+.checkbox {
+	width: 35px;
+	height: 20px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.linethrough {
+	text-decoration: line-through;
+	color: red;
+}
+
+.add-button {
+	color: grey;
+	width: 45px;
+	display: inline-block;
+	height: 45px;
+	font-size: 16px;
+	line-height: 45px;
+	background-color: lightgray;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid lightgray;
+	transition: 1s;
+}
+
+.add-button:hover {
+	background-color: #00ff00;
+	color:white;
+	border: 1px solid #eeeeee;
+}
+
+
+
+
+@media screen and (max-width: 760px){
+
+	header{
+		height: 180px;
+	}
+
+	header h1{
+		font-size: 1.5em;
+		margin: 0;
+	}
+	
+	header p {
+		margin: 5px auto;
+	}
+	.main {
+		margin-top: 0;
+	}
+
+	.shopping-list,
+	.add-list {
+		display: block;
+	}
+
+	.shopping-list{
+		min-height: 200px;
+		margin: 20px auto;
+		width: 70%
+	}
+
+	.shopping-list .item {
+		width: 45%;
+	}
+
+
+	.shopping-list p {
+		margin-left: 0;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 500px){
+	
+	.shopping-list{
+		margin: 20px auto;
+		width: 80%;
+	}
+}
